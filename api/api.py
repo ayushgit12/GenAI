@@ -35,7 +35,7 @@ prompt2 = ChatPromptTemplate.from_template(
 add_routes(
     app,
     prompt2 | model2,
-    path="/gemini"
+    path="/gemini" # makes path at /gemini/invoke
 )
 
 if __name__ == "__main__":
